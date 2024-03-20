@@ -7,9 +7,13 @@
 
   @font-face {
     font-family: 'Poppins';
-    src: url('Poppins-Bold.ttf') format('woff2');
+    src: url('Poppins-SemiBold.ttf') format('woff2');
     font-weight: normal;
     font-style: normal;
+  }
+
+  @keyframes move {
+    
   }
 
 body {
@@ -78,6 +82,20 @@ body {
     -o-border-radius: 39px;
 }
 
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 10px;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    font-size: 10px;
+    font-family: 'Poppins';
+  }
+  
+}
+
 #description {
     color: black;
     font-size: 16px;
@@ -96,8 +114,13 @@ body {
     font-family: 'Sofia Sans';
     font-size: 28px;
     margin: 0;
+    display: inline;
 }
-
+#highlightText::after {
+  content: "Choose Us";
+  font-weight: normal; /* Example style change */
+  color: black; /* Example color change */
+}
 @media screen and (max-width: 768px) {
     #description {
         color: black;
@@ -119,6 +142,27 @@ body {
         margin: 0;
     }
 }
+@media screen and (max-width: 576px) {
+  #description {
+      color: black;
+      font-size: 14px;
+  }
+  #price {
+      font-size: 25px;
+      font-weight: 600;
+      font-family: 'Sofia Sans';
+  }
+  #introText{
+      font-family: 'Sofia Sans';
+      font-size: 35px;
+      margin: 0;
+  }
+  #highlightText{
+      font-family: 'Sofia Sans';
+      font-size: 20px;
+      margin: 0;
+  }
+}
 
 .slider-container {
     display: flex;
@@ -132,6 +176,7 @@ body {
     width: 80%;
     display: flex;
   }
+  
 
 .watch-text {
     display: flex;
@@ -142,6 +187,8 @@ body {
     padding: 20px;
   }
 
+
+
 .watch-image {
     display: flex;
     justify-content: center;
@@ -150,11 +197,44 @@ body {
     position: relative;
     overflow: hidden;
   }
+ 
+  @media screen and  (max-width:576px) {
+    .slider {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .watch-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      padding: 20px;
+      order: 2;
+    }
+  
+  .watch-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      position: relative;
+      overflow: hidden;
+      order: 1;
+    }
+  }
 
 .watch-image img {
     width: 80%;
-    transition: transform 0.5s ease;
-  }
+    transition: transform 5s linear;
+    -webkit-transition: transform 5s linear;
+    -moz-transition: transform 5s linear;
+    -ms-transition: transform 5s linear;
+    -o-transition: transform 5s linear;
+}
 
 .arrow {
     position: absolute;
@@ -171,21 +251,45 @@ body {
 
 
 .arrow-left {
-    left: 10px;
+    left: -10px;
   }
 
 .arrow-right {
-    right: 10px;
+    right: -25px;
   }
+  @media screen and (max-width: 1000px ) {
+    .arrow {
+        width: 60px;
+    }
+    .arrow-left{
+        left: -10px;
+    }
+    .arrow-right{
+        right: -20px;
+    }
+}
+
 
 @media screen and (max-width: 768px ) {
     .arrow {
-        width: 30px;
+        width: 50px;
     }
     .arrow-left{
-        left: 0;
+        left: -10px;
     }
     .arrow-right{
-        right: 0;
+        right: -20px;
     }
+}
+
+@media screen and (max-width: 576px ) {
+  .arrow {
+      width: 40px;
+  }
+  .arrow-left{
+      left: -10px;
+  }
+  .arrow-right{
+      right: -20px;
+  }
 }
