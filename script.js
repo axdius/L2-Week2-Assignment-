@@ -14,7 +14,7 @@ const projectData = {
       {
         "watch_image": "https://res.cloudinary.com/dfsppvj1s/image/upload/v1710915016/Group_4_r4seie.png",
         "intro_text": "Exquisite Watches",
-        "highlight_text": "Gold Luxury, Choose Us",
+        "highlight_text": "Gold Luxury, ",
         "description": "Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless Elegance and Precision Craftsmanship - watch",
         "price": "$500.00",
         "social_media_image": "https://res.cloudinary.com/dfsppvj1s/image/upload/v1710915015/Frame_6_etjx6a.png",
@@ -23,7 +23,7 @@ const projectData = {
       {
         "watch_image": "https://res.cloudinary.com/dfsppvj1s/image/upload/v1710915016/Group_5_bvqsjy.png",
         "intro_text": "Dainty Timepieces",
-        "highlight_text": "Silver Luxury, Choose Us",
+        "highlight_text": "Silver Luxury, ",
         "description": "Explore the Ideal Timepiece for Any Moment and Enhance Your Style with Timeless Sophistication and Impeccable Craftsmanship - timepiece",
         "price": "$400.00",
         "social_media_image": "https://res.cloudinary.com/dfsppvj1s/image/upload/v1710915015/Frame_6_etjx6a.png",
@@ -32,7 +32,7 @@ const projectData = {
       {
         "watch_image": "https://res.cloudinary.com/dfsppvj1s/image/upload/v1710915016/Group_6_gdjyx3.png",
         "intro_text": "Exquisite Watches",
-        "highlight_text": "Choose Luxury, Choose Us",
+        "highlight_text": "Choose Luxury, ",
         "description": "Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless Elegance and Precision Craftsmanship - watch",
         "price": "$600.00",
         "social_media_image": "https://res.cloudinary.com/dfsppvj1s/image/upload/v1710915015/Frame_6_etjx6a.png",
@@ -41,7 +41,7 @@ const projectData = {
       {
         "watch_image": "https://res.cloudinary.com/dfsppvj1s/image/upload/v1710915016/Group_7_zvcpdk.png",
         "intro_text": "Exquisite Watches",
-        "highlight_text": "Choose Luxury, Choose Us",
+        "highlight_text": "Choose Luxury, ",
         "description": "Explore the Ideal Timepiece for Any Moment and Enhance Your Style with Timeless Sophistication and Impeccable Craftsmanship - timepiece",
         "price": "$450.00",
         "social_media_image": "https://res.cloudinary.com/dfsppvj1s/image/upload/v1710915015/Frame_6_etjx6a.png",
