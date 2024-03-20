@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Sofia Sans';
+    src: url('SofiaSansCondensed-Black.ttf') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Bold.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(105.54deg, #F4A764 -2.93%, #FFDEC2 72.14%);
+    color: white;
+  }
+
+  .header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+  }
+
+  .nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links li {
+    margin-right: 20px;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Poppins';
+  }
+  .social {
+    width: 150px;
+  }
+
+  .button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 39px;
+    cursor: pointer;
+    -webkit-border-radius: 39px;
+    -moz-border-radius: 39px;
+    -ms-border-radius: 39px;
+    -o-border-radius: 39px;
+}
+
+#description {
+    color: black;
+    font-size: 16px;
+}
+#price {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Sofia Sans';
+}
+#introText{
+    font-family: 'Sofia Sans';
+    font-size: 45px;
+    margin: 0;
+}
+#highlightText{
+    font-family: 'Sofia Sans';
+    font-size: 28px;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #description {
+        color: black;
+        font-size: 14px;
+    }
+    #price {
+        font-size: 25px;
+        font-weight: 600;
+        font-family: 'Sofia Sans';
+    }
+    #introText{
+        font-family: 'Sofia Sans';
+        font-size: 35px;
+        margin: 0;
+    }
+    #highlightText{
+        font-family: 'Sofia Sans';
+        font-size: 20px;
+        margin: 0;
+    }
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+  }
+
+.slider {
+    width: 80%;
+    display: flex;
+  }
+
+.watch-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    padding: 20px;
+  }
+
+.watch-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+
+.watch-image img {
+    width: 80%;
+    transition: transform 0.5s ease;
+  }
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+
+.arrow-left {
+    left: 10px;
+  }
+
+.arrow-right {
+    right: 10px;
+  }
+
+@media screen and (max-width: 768px ) {
+    .arrow {
+        width: 30px;
+    }
+    .arrow-left{
+        left: 0;
+    }
+    .arrow-right{
+        right: 0;
+    }
+}
